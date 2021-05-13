@@ -54,7 +54,7 @@ class MovieDetailsPage extends Component {
           <button
             type="button"
             onClick={this.onHandleBack}
-            className="backdrop bg-white bg-opacity-0 border text-white border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-10 text-lg"
+            className="backdrop mt-2 bg-white bg-opacity-0 border text-white border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-10 text-lg"
           >
             Go Back
           </button>
@@ -65,7 +65,7 @@ class MovieDetailsPage extends Component {
               state: { from: location.state.from },
             }}
           >
-            <button className="w-full backdrop bg-white bg-opacity-0 border text-white border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-10 text-lg">
+            <button className="w-full  backdrop bg-white bg-opacity-0 border text-white border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-10 text-lg">
               Cast
             </button>
           </NavLink>
@@ -75,7 +75,7 @@ class MovieDetailsPage extends Component {
               state: { from: location.state.from },
             }}
           >
-            <button className=" w-full backdrop bg-white bg-opacity-0 border text-white border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-10 text-lg">
+            <button className=" w-full mt-2 backdrop bg-white bg-opacity-0 border text-white border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-10 text-lg">
               Reviews
             </button>
           </NavLink>

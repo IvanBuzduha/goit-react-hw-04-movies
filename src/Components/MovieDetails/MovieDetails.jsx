@@ -17,6 +17,7 @@ const MovieDetails = ({
                 ? `https://image.tmdb.org/t/p/w300${poster_path}`
                 : "defaultMovie"
             }
+            alt={`Poster for ${title} movie`}
           />
           <div>
             <h2>{title}</h2>
@@ -31,9 +32,14 @@ const MovieDetails = ({
                 {release_date}
               </li>
             </ul>
-            <ul>
+            <ul className=" flex flex-wrap">
               <span>Genres: </span>
-              {genres && genres.map(({ id, name }) => <li key={id}>{name}</li>)}
+              {genres &&
+                genres.map(({ id, name }) => (
+                  <li key={id} className="pl-2">
+                    {name}
+                  </li>
+                ))}
             </ul>
             <h3>Overview: </h3>
             <p>{overview}</p>

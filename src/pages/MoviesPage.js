@@ -49,7 +49,7 @@ class MoviesPage extends Component {
     const { query, searchMovies } = this.state;
     return (
       <>
-        <div className=" flex  flex-col flex-wrap content-center">
+        <div className=" flex mb-8 flex-col flex-wrap content-center">
           <h2 className="text-white">Search Movies...</h2>
           <form onSubmit={this.onHandleSubmit}>
             <input

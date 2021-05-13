@@ -2,16 +2,20 @@ import React from "react";
 const Cast = ({ cast }) => {
   return (
     <>
-      <ul className=" flex flex-col items-stretch content-center flex-wrap">
+      <ul className=" flex flex-col items-stretch mt-4 content-center flex-wrap">
         {cast.map(({ cast_id, profile_path, name, character }) => (
-          <li className="flex items-center content-center mt-2" key={cast_id}>
+          <li
+            className=" gap-3 mt-2 flex items-center content-center w-10/12 md:w-1/4 bg-white bg-opacity-10 rounded p-3 text-white border border-gray-300 shadow-lg"
+            key={cast_id}
+          >
             <img
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w300${profile_path}`
                   : "defaultMovie"
               }
-              width="50px"
+              alt={name}
+              width="100px"
             />
             <div>
               <p>{name}</p>

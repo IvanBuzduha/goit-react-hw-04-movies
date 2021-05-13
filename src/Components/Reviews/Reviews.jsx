@@ -3,11 +3,14 @@ const Reviews = ({ reviews }) => {
   return (
     <>
       {
-        <ul className="m-10">
+        <ul className="m-10 flex flex-col flex-wrap content-center  text-white">
           {reviews.length ? (
             reviews.map(({ id, author, content }) => (
-              <li key={id}>
-                <p className="text-white">{author}</p>
+              <li
+                className=" gap-3 items-center content-center bg-white bg-opacity-10 rounded p-3 text-white border border-gray-300 shadow-lg"
+                key={id}
+              >
+                <p className="text-red-600">{author}:</p>
                 <p>Character: {content}</p>
               </li>
             ))
